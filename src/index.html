@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+             /* justify-content: center; */
+            /* align-items: start;  */
+            grid-template-rows: 1fr 2.5rem;
+            height: 100vh;
+            width: 100%;
+            background-color: #2f3678;
+            overflow-y: hidden;
+        }
+
+        li {
+          width: auto;
+          height: 3rem;
+          background-color:#6694EC;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+         column-gap: 1rem;
+         padding-left: 1rem;
+         border-radius: 40px;
+        }
+
+        label {
+          font-size: larger;
+        }
+
+        input[type="checkbox"] {
+          width: 1.5rem;
+          height: 1.5rem
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="gap-y-8 grid pt-8 grid-rows-[10%_40%_40%] h-auto w-[100%] justify-center">
+        <div class="container flex justify-center items-center">
+            <input type="text"  placeholder="Add Task" class="bg-[#1A0952] indent-6 w-[45rem] h-16 text-white rounded-[40px]"
+                id="addTask" /><button onclick="addTask()" id="butt"
+                class="bg-[#8182DA] flex justify-center items-center rounded-[40px] w-8 h-8 relative right-12">
+                <p class="text-2xl text-white">+</p>
+            </button>
+        </div>
+        <div class="grid gap-y-2 grid-rows-[1rem_2fr]">
+            <p class="text-4xl font-bold text-[#848484]">To-do</p>
+            <ul id="taskContainer" class=" grid grid-cols-3 mt-4 gap-y-3 gap-x-3 overflow-y-auto">
+            
+            </ul>
+
+        </div>
+        <div  class="grid gap-y-2 grid-rows-[15%_85%]">
+            <p class="text-4xl font-bold text-[#848484]">Completed</p>
+            <ul id="taskCom" class="grid grid-cols-3 gap-y-3 mt-2 mb-6 gap-x-3 overflow-y-auto">
+              
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="bg-[#365DA8] h-10 self-end grid justify-start items-center pl-4  text-[#6694EC]"><p> Made By Ham Songhy, Phnom Penh, 2024</p></footer>
+    <script src="App.js"></script>
+</body>
+
+</html>
