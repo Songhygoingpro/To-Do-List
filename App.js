@@ -12,7 +12,7 @@ function addTask() {
     label.htmlFor = 'task' + tasknum;
     label.textContent = addTasks.value;
     let icon = document.createElement('i');
-    icon.className = 'fas fa-trash-alt';
+    icon.className = 'fa fa-trash';
     icon.style.cursor = 'pointer';
 
   let task = document.createElement('li');
